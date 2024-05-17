@@ -57,30 +57,14 @@ Click **Create** to complete the application creation process.
 
    Baud rate: 115200 bps; Data: 8 bits; Parity: None; stop: 1 bit; Flow control: None; New line for receiving data: Line Feed(LF) or auto setting
 
-3. Program the board using one of the following:
-
-   <details><summary><b>Using Eclipse IDE for ModusToolbox&trade; software</b></summary>
-
+3. Program the board using Modus Toolbox:
+   
       1. Select the application project in Project Explorer.
 
       2. In the **Quick Panel**, scroll down, and click **\<Application Name> Program (KitProg3_MiniProg4)**.
 
-   </details>
 
-   <details><summary><b>Using CLI</b></summary>
-
-     From the terminal, execute the `make program` command to build and program the application using the default toolchain to the default target. The default toolchain and target are specified in the application's Makefile but you can override those values manually:
-      ```
-      make program TARGET=<BSP> TOOLCHAIN=<toolchain>
-      ```
-
-      Example:
-      ```
-      make program TARGET=CYW920829M2EVK-02 TOOLCHAIN=GCC_ARM
-      ```
-   </details>
-
-4. After programming, the application starts automatically. Observe the messages on the UART terminal, and wait for the device to connect with the peer client (for example, the AIROC&trade; Bluetooth&reg; Connect App). Use the KitProg3 COM port to view the Bluetooth&reg; stack and application trace messages in the terminal window:
+5. After programming, the application starts automatically. Observe the messages on the UART terminal, and wait for the device to connect with the peer client (for example, the AIROC&trade; Bluetooth&reg; Connect App). Use the KitProg3 COM port to view the Bluetooth&reg; stack and application trace messages in the terminal window:
 
    **Figure 1. Log messages on KitProg3 COM port**
 
