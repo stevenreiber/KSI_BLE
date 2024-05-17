@@ -70,7 +70,10 @@ Click **Create** to complete the application creation process.
 
 5. After programming, the application on the Crux microcontroller starts immediately. Obtain dble.exe from this location `X:\KSI_BLE_APP`, extract the zip file and run dble.exe. 
 
-
+## Common Errors
+1. If Modus Toolbox can not find CY_TOOLS, ensure that CY_TOOLS_PATHS is in your environment variables, oddly enough you may need to use forward slashes in the path. Usually installing the program as an administrator ensures this error does not occur.
+2. get_adv_var_name_length() not defined. This error occurs when the cycfg_gap.c file is incorrectly overwritten by ModusToolbox. To solve this, copy and paste the code from cycfg_cap.c and cycfg_gap.h on github into your local Modus Toolbox version
+Both of these files are found under "GeneratedSource" in both github and in your modus toolbox project.
 
 ## Debugging
 
