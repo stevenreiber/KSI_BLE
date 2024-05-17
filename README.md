@@ -57,7 +57,7 @@ Click **Create** to complete the application creation process.
 ![](images/debug-board-connections.png)
 ![](images/crux-board-connections.png)
 
-3. Use your favorite serial terminal application tool and connect to the KitProg3 COM port. Configure the terminal application to access the serial port using the following settings:
+3. If you would like to view the microcontrollers non bluetooth output, solder connections from the output UART on the microcontroller to a UART cable and use tera-term with the follow parameters:
 
    Baud rate: 115200 bps; Data: 8 bits; Parity: None; stop: 1 bit; Flow control: None; New line for receiving data: Line Feed(LF) or auto setting
 
@@ -68,11 +68,9 @@ Click **Create** to complete the application creation process.
       2. In the **Quick Panel**, scroll down, and click **\<Application Name> Program (KitProg3_MiniProg4)**.
 
 
-5. After programming, the application starts automatically. Observe the messages on the UART terminal, and wait for the device to connect with the peer client (for example, the AIROC&trade; Bluetooth&reg; Connect App). Use the KitProg3 COM port to view the Bluetooth&reg; stack and application trace messages in the terminal window:
+5. After programming, the application on the Crux microcontroller starts immediately. Obtain dble.exe from this location `X:\KSI_BLE_APP`, extract the zip file and run dble.exe. 
 
-   **Figure 1. Log messages on KitProg3 COM port**
 
-   ![](images/serial-log-when-connect-device.png)
 
 ## Debugging
 
