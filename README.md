@@ -33,7 +33,7 @@ This example uses the board's default configuration. See the kit user guide to e
 ## Importing the project
 
 Clone/download the project repository:
-`git clone git@bitbucket.org:arrowit/ble-module-karl-storz-imaging.git`
+`git clone git@github.com:stevenreiber/KSI_BLE.git`
 
 _*Note_ - Clone/download the repository to a directory **without** any spaces in the path name or subsequent import steps will fail.
 
