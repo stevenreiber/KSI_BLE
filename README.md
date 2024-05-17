@@ -51,13 +51,17 @@ Choose the example by enabling the checkbox.
 Click **Create** to complete the application creation process.
 
 ## Operation
-1. Connect the board to your PC using the provided USB cable through the KitProg3 USB connector.
+1. Connect the debug board to your PC using the provided USB cable.
 
-2. Use your favorite serial terminal application tool and connect to the KitProg3 COM port. Configure the terminal application to access the serial port using the following settings:
+2. Connect the debug board to your Crux as per the images below.
+![](images/debug-board-connections.png)
+![](images/crux-board-connections.png)
+
+3. Use your favorite serial terminal application tool and connect to the KitProg3 COM port. Configure the terminal application to access the serial port using the following settings:
 
    Baud rate: 115200 bps; Data: 8 bits; Parity: None; stop: 1 bit; Flow control: None; New line for receiving data: Line Feed(LF) or auto setting
 
-3. Program the board using Modus Toolbox:
+4. Program the board using Modus Toolbox:
    
       1. Select the application project in Project Explorer.
 
